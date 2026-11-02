@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Default suite: API + UI. Excludes 'knownDefect' (documented failing tests) and mobile (needs an emulator). -->
+<suite name="All (API + UI)" verbose="1">
+    <listeners>
+        <listener class-name="com.nathalyamaya.qa.common.RetryTransformer"/>
+    </listeners>
+    <test name="API">
+        <groups><run><exclude name="knownDefect"/></run></groups>
+        <packages><package name="com.nathalyamaya.qa.api"/></packages>
+    </test>
+    <test name="UI">
+        <groups><run><exclude name="knownDefect"/></run></groups>
+        <packages><package name="com.nathalyamaya.qa.ui"/></packages>
+    </test>
+</suite>

@@ -1,0 +1,7 @@
+# Negative login test data (TEST_PLAN.md section 5). Pipe-delimited; empty cells are deliberate (blank input).
+caseId|username|password|expectedError
+TC-UI-02|locked_out_user|secret_sauce|Epic sadface: Sorry, this user has been locked out.
+TC-UI-03|standard_user|wrong_password|Epic sadface: Username and password do not match any user in this service
+TC-UI-04|unknown_user|secret_sauce|Epic sadface: Username and password do not match any user in this service
+TC-UI-05||secret_sauce|Epic sadface: Username is required
+TC-UI-06|standard_user||Epic sadface: Password is required

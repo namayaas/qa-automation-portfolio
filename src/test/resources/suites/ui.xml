@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI (Selenium)" verbose="1">
+    <listeners>
+        <listener class-name="com.nathalyamaya.qa.common.RetryTransformer"/>
+    </listeners>
+    <test name="UI">
+        <packages><package name="com.nathalyamaya.qa.ui"/></packages>
+    </test>
+</suite>

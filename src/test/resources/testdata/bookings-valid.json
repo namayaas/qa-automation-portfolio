@@ -1,0 +1,39 @@
+[
+  {
+    "condition": "TD-01 minimum price (0)",
+    "booking": {
+      "firstname": "Zero", "lastname": "Price", "totalprice": 0, "depositpaid": false,
+      "bookingdates": { "checkin": "2027-04-01", "checkout": "2027-04-02" }
+    }
+  },
+  {
+    "condition": "TD-02 large price",
+    "booking": {
+      "firstname": "Big", "lastname": "Spender", "totalprice": 999999, "depositpaid": true,
+      "bookingdates": { "checkin": "2027-04-01", "checkout": "2027-12-31" }
+    }
+  },
+  {
+    "condition": "TD-03 accented characters",
+    "booking": {
+      "firstname": "José", "lastname": "Peña-Núñez", "totalprice": 120, "depositpaid": true,
+      "bookingdates": { "checkin": "2027-05-10", "checkout": "2027-05-12" },
+      "additionalneeds": "Cuna"
+    }
+  },
+  {
+    "condition": "TD-04 single-character name",
+    "booking": {
+      "firstname": "A", "lastname": "B", "totalprice": 1, "depositpaid": true,
+      "bookingdates": { "checkin": "2027-06-01", "checkout": "2027-06-01" }
+    }
+  },
+  {
+    "condition": "TD-05 apostrophe and space in name",
+    "booking": {
+      "firstname": "Mary Ann", "lastname": "O'Brien", "totalprice": 300, "depositpaid": false,
+      "bookingdates": { "checkin": "2027-07-04", "checkout": "2027-07-08" },
+      "additionalneeds": "Parking"
+    }
+  }
+]

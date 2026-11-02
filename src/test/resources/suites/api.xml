@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API (REST + SOAP)" verbose="1">
+    <listeners>
+        <listener class-name="com.nathalyamaya.qa.common.RetryTransformer"/>
+    </listeners>
+    <test name="API">
+        <groups><run><exclude name="knownDefect"/></run></groups>
+        <packages><package name="com.nathalyamaya.qa.api"/></packages>
+    </test>
+</suite>

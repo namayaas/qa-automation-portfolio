@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Needs an Android emulator/device and a running Appium server. See README "Mobile tests". -->
+<suite name="Mobile (Appium)" verbose="1">
+    <test name="Mobile">
+        <packages><package name="com.nathalyamaya.qa.mobile"/></packages>
+    </test>
+</suite>
